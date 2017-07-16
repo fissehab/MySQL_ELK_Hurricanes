@@ -1,0 +1,14 @@
+PUT /_template/storms
+{
+  "order": 0,
+  "template": "storms*",
+  "mappings": {
+    "_default_": {
+      "properties": {
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}
